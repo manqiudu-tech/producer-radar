@@ -1,0 +1,371 @@
+/* ============================================================
+   DUMANQIU · PRODUCER RADAR
+   视觉：深色电影感 + 金色点缀
+   板块：今日简报 / 全球影视 / AI 影视 / 音乐配乐
+   附加：指标徽章 · 趋势段 · 批次说明
+   ============================================================ */
+
+:root {
+  --bg: #0d0f14;
+  --bg-soft: #12151d;
+  --card: #171b25;
+  --card-hover: #1d2230;
+  --line: #262c3a;
+  --gold: #d4a94e;
+  --gold-soft: #e8c97a;
+  --text: #e8e6e0;
+  --muted: #8b93a1;
+  --accent: #7fa3d1;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif;
+  line-height: 1.7;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(1200px 500px at 80% -10%, rgba(212, 169, 78, 0.06), transparent 60%),
+    radial-gradient(900px 400px at 0% 0%, rgba(127, 163, 209, 0.05), transparent 60%);
+}
+
+.container { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+/* ---------- Header ---------- */
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  padding: 34px 0 26px;
+  position: relative;
+}
+.site-header .container { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 14px; }
+
+.brand h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 800;
+  font-family: "Songti SC", "STSong", Georgia, serif;
+}
+.brand h1 .accent { color: var(--gold); }
+
+.brand-en {
+  font-size: 12px;
+  letter-spacing: 6px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.tagline {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.update-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+.update-info strong { color: var(--gold-soft); font-weight: 600; }
+
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 10px var(--gold);
+  animation: pulse 2.2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+/* ---------- Tabs ---------- */
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 18px 20px 0;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.tab {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  border-radius: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all .18s ease;
+  font-family: inherit;
+}
+.tab .tab-cn { font-size: 15px; font-weight: 600; color: inherit; }
+.tab .tab-en { font-size: 10px; letter-spacing: 2px; color: var(--muted); margin-top: 2px; }
+
+.tab:hover { border-color: var(--gold); color: var(--text); }
+.tab.active {
+  background: var(--card);
+  border-color: var(--gold);
+  color: var(--gold-soft);
+  box-shadow: 0 0 18px rgba(212, 169, 78, 0.12);
+}
+
+/* ---------- Panels ---------- */
+
+main.container { padding-top: 28px; padding-bottom: 60px; }
+
+.panel { display: none; }
+.panel.active { display: block; animation: fadeIn .28s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+.section-head { margin-bottom: 20px; }
+.section-head h2 {
+  font-size: 24px;
+  font-family: "Songti SC", "STSong", Georgia, serif;
+  font-weight: 700;
+}
+.section-head .en {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--muted);
+  margin-left: 8px;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+}
+.section-head .sub { color: var(--muted); font-size: 14px; margin-top: 4px; }
+
+/* ---------- 批次说明 ---------- */
+
+.batch-note {
+  background: var(--bg-soft);
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  padding: 10px 16px;
+  margin-bottom: 14px;
+}
+.batch-cn { font-size: 13px; color: var(--gold-soft); font-weight: 600; }
+.batch-en { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+/* ---------- 趋势段 ---------- */
+
+.trend-box { margin-bottom: 18px; }
+.trend-inner {
+  background: linear-gradient(135deg, rgba(212, 169, 78, 0.08), rgba(127, 163, 209, 0.05));
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+.trend-tag {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.trend-cn { font-size: 14px; color: var(--text); }
+.trend-en { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.6; }
+
+/* ---------- 指标徽章 ---------- */
+
+.metrics {
+  margin-bottom: 18px;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.metrics-title {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.metrics-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+.metric {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: border-color .18s ease;
+}
+.metric:hover { border-color: var(--gold); }
+.metric-label { font-size: 11px; color: var(--muted); }
+.metric-value { font-size: 20px; font-weight: 800; color: var(--gold-soft); font-family: "Songti SC", "STSong", Georgia, serif; }
+.metric-note { font-size: 11px; color: var(--muted); }
+
+/* ---------- 卡片 ---------- */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  background: var(--card-hover);
+}
+
+.card-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.tag {
+  font-size: 11px;
+  color: var(--gold);
+  border: 1px solid rgba(212, 169, 78, 0.4);
+  border-radius: 999px;
+  padding: 2px 10px;
+  white-space: nowrap;
+}
+.date { font-size: 12px; color: var(--muted); white-space: nowrap; }
+
+.card-title {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.why { font-size: 13px; color: var(--muted); }
+.why-label { color: var(--gold-soft); font-weight: 600; }
+
+.meta { font-size: 12px; color: var(--muted); }
+.source { font-size: 12px; color: var(--accent); }
+
+.go {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 13px;
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color .18s ease;
+  margin-top: auto;
+}
+.go:hover { border-bottom-color: var(--gold); }
+
+.empty { color: var(--muted); font-size: 14px; }
+
+/* ---------- Day switch ---------- */
+
+.day-switch { margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap; }
+.day-btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all .18s ease;
+}
+.day-btn:hover { border-color: var(--gold); color: var(--text); }
+.day-btn.active { background: var(--card); border-color: var(--gold); color: var(--gold-soft); }
+
+/* ---------- Watchlist ---------- */
+
+.watch-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.focus { font-size: 13px; color: var(--text); }
+
+/* ---------- Roadmap ---------- */
+
+.roadmap { margin-top: 12px; }
+.roadmap-card .tag { color: var(--accent); border-color: rgba(127, 163, 209, 0.4); }
+
+/* ---------- About ---------- */
+
+.about-box {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 22px;
+}
+.about-role h3 { font-size: 22px; font-family: "Songti SC", "STSong", Georgia, serif; color: var(--gold-soft); margin-bottom: 6px; }
+.about-role p { color: var(--muted); font-size: 14px; margin-bottom: 14px; }
+.about-block { padding: 14px 0; border-top: 1px solid var(--line); }
+.about-block h4 { font-size: 15px; color: var(--gold); margin-bottom: 6px; }
+.about-block p { font-size: 14px; color: var(--text); }
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 24px 0 40px;
+  text-align: center;
+}
+.site-footer p { color: var(--muted); font-size: 13px; }
+.footer-note { margin-top: 4px; font-size: 12px; opacity: 0.8; }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 720px) {
+  .brand h1 { font-size: 30px; }
+  .site-header .container { flex-direction: column; align-items: flex-start; }
+  .cards { grid-template-columns: 1fr; }
+  .metrics-row { grid-template-columns: repeat(2, 1fr); }
+  .tabs { padding: 14px 20px 0; }
+}
+
+
+/* ===== 中英双语卡片 ===== */
+.card-title-en {
+  margin: 0.3rem 0 0.6rem;
+  font-family: "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--gold-soft);
+  letter-spacing: 0.01em;
+}
+.why-en {
+  margin: 0.4rem 0 0;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: rgba(232, 201, 122, 0.55);
+  font-family: "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+}
+.why-en-label {
+  color: rgba(232, 201, 122, 0.8);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.card .meta {
+  margin-top: 0.5rem;
+}

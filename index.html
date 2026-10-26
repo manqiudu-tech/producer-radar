@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DU DAILY · 每日资讯 —— 制作人的每日产业资讯</title>
+<meta name="description" content="DU DAILY · 每日资讯：今日简报 / 全球影视 / AI 资讯 / AI 影视 / 音乐配乐，制作人的每日产业资讯，每日追加即可看到最新资讯。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <h1>每日<span class="accent">资讯</span></h1>
+      <p class="brand-en">DU DAILY · INDUSTRY BRIEF</p>
+      <p class="tagline">制作人 · 制片人的每日产业资讯 —— 全球影视 × AI × 音乐配乐</p>
+    </div>
+    <div class="update-info">
+      <span class="dot"></span>
+      <span>更新于 <strong id="updated-date">--</strong></span>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs container" id="tabs"></nav>
+
+<main class="container">
+  <section id="panel-brief" class="panel active">
+    <div class="section-head">
+      <h2>今日简报 <span class="en">DAILY BRIEF</span></h2>
+      <p class="sub">每日精选跨四大板块的高含金量信息，每条附来源与「制作人视角」解读。</p>
+      <div class="day-switch" id="day-switch"></div>
+    </div>
+    <div class="metrics" id="metrics"></div>
+    <div class="cards" id="brief-cards"></div>
+  </section>
+
+  <section id="panel-global" class="panel">
+    <div class="section-head">
+      <h2>全球影视 <span class="en">GLOBAL SCREEN</span></h2>
+      <p class="sub">电影与剧集等多元形式：全球票房 / 绿灯立项 / 开机 / 产业并购 / 流媒体剧集 / 发行策略，只做产业信号，不做娱乐八卦。</p>
+    </div>
+    <div class="batch-note" id="batch-global"></div>
+    <div class="trend-box" id="trend-global"></div>
+    <div class="cards" id="global-cards"></div>
+  </section>
+
+  <section id="panel-ai" class="panel">
+    <div class="section-head">
+      <h2>AI 资讯 <span class="en">AI HEADLINES</span></h2>
+      <p class="sub">大模型 / 产品 / 融资 / 政策 / 智能体 —— 每日快速知晓 AI 发展，一条不落。</p>
+    </div>
+    <div class="batch-note" id="batch-ai"></div>
+    <div class="trend-box" id="trend-ai"></div>
+    <div class="cards" id="ai-cards"></div>
+  </section>
+
+  <section id="panel-aifilm" class="panel">
+    <div class="section-head">
+      <h2>AI 影视 <span class="en">AI FILM</span></h2>
+      <p class="sub">AI 长片项目、生产管线、工具与资本动向。站在制作人视角看：哪些值得跟进，哪些只是噪音。</p>
+    </div>
+    <div class="batch-note" id="batch-aifilm"></div>
+    <div class="trend-box" id="trend-aifilm"></div>
+    <div class="cards" id="aifilm-cards"></div>
+  </section>
+
+  <section id="panel-music" class="panel">
+    <div class="section-head">
+      <h2>音乐配乐 <span class="en">MUSIC &amp; SCORE</span></h2>
+      <p class="sub">音乐选择 / 配乐行业 / 版权与授权 / AI 音乐工具 —— 我负责的工种，必须有第一手雷达。</p>
+    </div>
+    <div class="batch-note" id="batch-music"></div>
+    <div class="trend-box" id="trend-music"></div>
+    <div class="cards" id="music-cards"></div>
+  </section>
+
+  <section id="panel-world" class="panel">
+    <div class="section-head">
+      <h2>国际新闻 <span class="en">WORLD NEWS</span></h2>
+      <p class="sub">俄乌、中东、能源与全球政经 —— 每条都标注来源，制作预算的地缘风向标。</p>
+    </div>
+    <div class="batch-note" id="batch-world"></div>
+    <div class="trend-box" id="trend-world"></div>
+    <div class="cards" id="world-cards"></div>
+  </section>
+
+  <section id="panel-finance" class="panel">
+    <div class="section-head">
+      <h2>股币信号 <span class="en">FINANCE &amp; CRYPTO</span></h2>
+      <p class="sub">BTC / ETH / 美股 / 利率 —— 适合炒股炒币的专业信号台，数据可溯源，观点讲逻辑。</p>
+    </div>
+    <div class="batch-note" id="batch-finance"></div>
+    <div class="trend-box" id="trend-finance"></div>
+    <div class="cards" id="finance-cards"></div>
+  </section>
+
+  <section id="panel-english" class="panel">
+    <div class="section-head">
+      <h2>英语学习 <span class="en">ENGLISH DAILY</span></h2>
+      <p class="sub">入门 → 进阶 → 高级，难度循序渐进；每天一句真实行情新闻，拆到能背、能用。</p>
+    </div>
+    <div class="batch-note" id="batch-english"></div>
+    <div class="trend-box" id="trend-english"></div>
+    <div class="cards" id="english-cards"></div>
+  </section>
+
+  <section id="panel-watchlist" class="panel">
+    <div class="section-head">
+      <h2>追踪名单 <span class="en">WATCHLIST</span></h2>
+      <p class="sub">长期盯梢的信号源：公司、项目、工具、创作者。只追加，不覆盖。</p>
+    </div>
+    <div class="cards watch-grid" id="watchlist-cards"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>DU DAILY · 每日资讯 · 只追加，不覆盖 · 每条信息均可溯源</p>
+    <p class="footer-note">信息仅供个人决策参考，不构成投资建议</p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  var DAYS = window.PR_DATA.days;
+  var TABS = window.PR_DATA.tabs;
+  var WATCHLIST = window.PR_DATA.watchlist;
+  var currentDayIndex = 0;
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined) n.textContent = text;
+    return n;
+  }
+
+  /* ---------- 指标徽章 ---------- */
+  function renderMetrics(day) {
+    var wrap = document.getElementById("metrics");
+    wrap.innerHTML = "";
+    if (!day.metrics || !day.metrics.length) return;
+    var title = el("p", "metrics-title", "数据指标 · KEY METRICS — " + day.date);
+    wrap.appendChild(title);
+    var row = el("div", "metrics-row");
+    day.metrics.forEach(function (m) {
+      var b = el("div", "metric");
+      b.appendChild(el("span", "metric-label", m.label));
+      b.appendChild(el("strong", "metric-value", m.value));
+      b.appendChild(el("span", "metric-note", m.note));
+      row.appendChild(b);
+    });
+    wrap.appendChild(row);
+  }
+
+  /* ---------- 批次说明（自动计算：本批 N 条 + 历史 M 条） ---------- */
+  function renderBatch(id, key) {
+    var wrap = document.getElementById(id);
+    wrap.innerHTML = "";
+    var list = (DAYS[currentDayIndex][key] || []);
+    var n = list.length;
+    var m = 0;
+    for (var i = currentDayIndex + 1; i < DAYS.length; i++) {
+      m += (DAYS[i][key] || []).length;
+    }
+    var cn = "本批 " + keyLabel(key) + " 追加 " + n + " 条 · 历史 " + m + " 条保留（合计 " + (n + m) + "）";
+    var en = "Appended " + n + " this batch · " + m + " kept from history (total " + (n + m) + ")";
+    wrap.appendChild(el("p", "batch-cn", cn));
+    wrap.appendChild(el("p", "batch-en", en));
+  }
+
+  function keyLabel(key) {
+    var map = { global: "全球影视", ai: "AI 资讯", aifilm: "AI 影视", music: "音乐配乐", world: "国际新闻", finance: "股币信号", english: "英语学习" };
+    return map[key] || key;
+  }
+
+  /* ---------- 趋势段（双语） ---------- */
+  function renderTrend(id, day, key) {
+    var wrap = document.getElementById(id);
+    wrap.innerHTML = "";
+    var t = day.trends && day.trends[key];
+    if (!t) return;
+    var box = el("div", "trend-inner");
+    box.appendChild(el("span", "trend-tag", "TREND · 趋势"));
+    box.appendChild(el("p", "trend-cn", t.cn));
+    box.appendChild(el("p", "trend-en", t.en));
+    wrap.appendChild(box);
+  }
+
+  /* ---------- Tabs ---------- */
+  function renderTabs() {
+    var wrap = document.getElementById("tabs");
+    TABS.forEach(function (t, i) {
+      var b = el("button", "tab" + (i === 0 ? " active" : ""));
+      b.dataset.tab = t.id;
+      b.appendChild(el("span", "tab-cn", t.label));
+      b.appendChild(el("span", "tab-en", t.en));
+      b.addEventListener("click", function () { switchTab(t.id); });
+      wrap.appendChild(b);
+    });
+  }
+
+  function switchTab(id) {
+    var btns = document.querySelectorAll(".tab");
+    btns.forEach(function (b) { b.classList.toggle("active", b.dataset.tab === id); });
+    var panels = document.querySelectorAll(".panel");
+    panels.forEach(function (p) { p.classList.toggle("active", p.id === "panel-" + id); });
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  /* ---------- 卡片 ---------- */
+  function card(item) {
+    var c = el("article", "card");
+    var top = el("div", "card-top");
+    if (item.tag) top.appendChild(el("span", "tag", item.tag));
+    if (item.date) top.appendChild(el("span", "date", item.date));
+    c.appendChild(top);
+    c.appendChild(el("h3", "card-title", item.title));
+    if (item.en) c.appendChild(el("p", "card-title-en", item.en));
+    if (item.why) {
+      var why = el("p", "why");
+      why.appendChild(el("span", "why-label", "制作人视角 · "));
+      why.appendChild(document.createTextNode(item.why));
+      c.appendChild(why);
+    }
+    if (item.whyEn) {
+      var whyEn = el("p", "why-en");
+      whyEn.appendChild(el("span", "why-en-label", "Producer's note · "));
+      whyEn.appendChild(document.createTextNode(item.whyEn));
+      c.appendChild(whyEn);
+    }
+    if (item.source) {
+      var meta = el("p", "meta");
+      meta.appendChild(el("span", "source", "来源：" + item.source));
+      c.appendChild(meta);
+    }
+    if (item.url) {
+      var a = el("a", "go", "打开原文 ↗");
+      a.href = item.url;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      c.appendChild(a);
+    }
+    return c;
+  }
+
+  /* ---------- 每日渲染 ---------- */
+  function renderDay(day) {
+    document.getElementById("updated-date").textContent = day.date + (day.batch ? " · " + day.batch : "");
+    renderMetrics(day);
+    renderBatch("batch-global", "global");
+    renderBatch("batch-ai", "ai");
+    renderBatch("batch-aifilm", "aifilm");
+    renderBatch("batch-music", "music");
+    renderBatch("batch-world", "world");
+    renderBatch("batch-finance", "finance");
+    renderBatch("batch-english", "english");
+    renderTrend("trend-global", day, "global");
+    renderTrend("trend-ai", day, "ai");
+    renderTrend("trend-aifilm", day, "aifilm");
+    renderTrend("trend-music", day, "music");
+    renderTrend("trend-world", day, "world");
+    renderTrend("trend-finance", day, "finance");
+    renderTrend("trend-english", day, "english");
+    fill("brief-cards", day.brief);
+    fill("global-cards", day.global);
+    fill("ai-cards", day.ai);
+    fill("aifilm-cards", day.aifilm);
+    fill("music-cards", day.music);
+    fill("world-cards", day.world);
+    fill("finance-cards", day.finance);
+    fill("english-cards", day.english);
+    renderDaySwitch();
+  }
+
+  function fill(id, list) {
+    var wrap = document.getElementById(id);
+    wrap.innerHTML = "";
+    (list || []).forEach(function (item) { wrap.appendChild(card(item)); });
+    if (!list || !list.length) {
+      wrap.appendChild(el("p", "empty", "本日暂无该栏目条目，明日补齐。"));
+    }
+  }
+
+  function renderDaySwitch() {
+    var wrap = document.getElementById("day-switch");
+    wrap.innerHTML = "";
+    if (DAYS.length <= 1) return;
+    DAYS.forEach(function (d, i) {
+      var b = el("button", "day-btn" + (i === currentDayIndex ? " active" : ""), d.date);
+      b.addEventListener("click", function () {
+        currentDayIndex = i;
+        renderDay(DAYS[i]);
+      });
+      wrap.appendChild(b);
+    });
+  }
+
+  /* ---------- 追踪名单 ---------- */
+  function renderWatchlist() {
+    var wrap = document.getElementById("watchlist-cards");
+    WATCHLIST.forEach(function (w) {
+      var c = el("article", "card watch-card");
+      var top = el("div", "card-top");
+      top.appendChild(el("span", "tag", w.type));
+      if (w.signal) top.appendChild(el("span", "date", "盯梢：" + w.signal));
+      c.appendChild(top);
+      c.appendChild(el("h3", "card-title", w.name));
+      if (w.focus) c.appendChild(el("p", "focus", w.focus));
+      if (w.note) {
+        var why = el("p", "why");
+        why.appendChild(el("span", "why-label", "为何盯 · "));
+        why.appendChild(document.createTextNode(w.note));
+        c.appendChild(why);
+      }
+      wrap.appendChild(c);
+    });
+  }
+
+
+
+  renderTabs();
+  renderDay(DAYS[0]);
+  renderWatchlist();
+})();
+</script>
+</body>
+</html>
