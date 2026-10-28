@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DU DAILY · 每日资讯 —— 制作人的每日产业资讯</title>
-<meta name="description" content="DU DAILY · 每日资讯：今日简报 / 全球影视 / AI 资讯 / AI 影视 / 音乐配乐，制作人的每日产业资讯，每日追加即可看到最新资讯。">
+<meta name="description" content="DU DAILY · 每日资讯：今日简报 / 全球影视 / AI 资讯 / AI 影视 / 音乐配乐 / 小红书，制作人的每日产业资讯，每日追加即可看到最新资讯。">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -74,6 +74,16 @@
     <div class="batch-note" id="batch-music"></div>
     <div class="trend-box" id="trend-music"></div>
     <div class="cards" id="music-cards"></div>
+  </section>
+
+  <section id="panel-xiaohongshu" class="panel">
+    <div class="section-head">
+      <h2>小红书 <span class="en">XIAOHONGSHU</span></h2>
+      <p class="sub">中文内容世界的第一手风向标——AI 创作者、影视短片与爆款逻辑；平台女性用户约 72%，审美与情绪优先于参数炫技。</p>
+    </div>
+    <div class="batch-note" id="batch-xiaohongshu"></div>
+    <div class="trend-box" id="trend-xiaohongshu"></div>
+    <div class="cards" id="xiaohongshu-cards"></div>
   </section>
 
   <section id="panel-world" class="panel">
@@ -175,7 +185,7 @@
   }
 
   function keyLabel(key) {
-    var map = { global: "全球影视", ai: "AI 资讯", aifilm: "AI 影视", music: "音乐配乐", world: "国际新闻", finance: "股币信号", english: "英语学习" };
+    var map = { global: "全球影视", ai: "AI 资讯", aifilm: "AI 影视", music: "音乐配乐", xiaohongshu: "小红书", world: "国际新闻", finance: "股币信号", english: "英语学习" };
     return map[key] || key;
   }
 
@@ -257,6 +267,7 @@
     renderBatch("batch-ai", "ai");
     renderBatch("batch-aifilm", "aifilm");
     renderBatch("batch-music", "music");
+    renderBatch("batch-xiaohongshu", "xiaohongshu");
     renderBatch("batch-world", "world");
     renderBatch("batch-finance", "finance");
     renderBatch("batch-english", "english");
@@ -264,6 +275,7 @@
     renderTrend("trend-ai", day, "ai");
     renderTrend("trend-aifilm", day, "aifilm");
     renderTrend("trend-music", day, "music");
+    renderTrend("trend-xiaohongshu", day, "xiaohongshu");
     renderTrend("trend-world", day, "world");
     renderTrend("trend-finance", day, "finance");
     renderTrend("trend-english", day, "english");
@@ -272,6 +284,7 @@
     fill("ai-cards", day.ai);
     fill("aifilm-cards", day.aifilm);
     fill("music-cards", day.music);
+    fill("xiaohongshu-cards", day.xiaohongshu);
     fill("world-cards", day.world);
     fill("finance-cards", day.finance);
     fill("english-cards", day.english);
