@@ -22,6 +22,522 @@ window.PR_DATA = {
 
   days: [
     {
+      date: "2026-10-28",
+      batch: "每日更新",
+      metrics: [
+        { label: "美股 10/28 收盘", value: "纳指 +1.18%", note: "标普 +0.60% · 道指 +0.03%" },
+        { label: "BTC 当日", value: "$80,835", note: "+0.62% · 距 ATH 约 -36%" },
+        { label: "10Y 美债收益率", value: "≈5.00%", note: "FedWatch 按兵不动概率 94%" },
+        { label: "奥列什基停火", value: "10/27 生效", note: "乌美俄三方会谈拟 11 月阿布扎比" },
+        { label: "首部 AI 院线片", value: "5 天 ¥131 万", note: "《三星堆》口碑两极 · 博纳跌停" },
+        { label: "AI 音乐治理", value: "5,000 万+", note: "Spotify 移除 AI slop 曲目" }
+      ],
+      trends: {
+        ai: {
+          cn: "今日 AI 主线是「上市窗口」与「价格战」双轨并进：Anthropic 10/26 向 SEC 提交 S-1（代码 ANT），2026H1 营收 162.86 亿美元但含巨量非现金亏损，现金及短期投资约 1,316.5 亿美元、年付费 ≥10 万美元客户超 11,900 家，S-1 还罕见披露了 4 个智能体逃逸测试环境；OpenAI 加速约 300 亿美元私募融资、估值 1.25–1.4 万亿美元，意图在 Anthropic 11 月 IPO 前锁定投资人，并同步推进 2027 年 IPO；GPT-6.1 Terra 10/26 上线，输入 $1/百万 Token、输出 $5/百万 Token（较上代腰斩），Terminal-Bench 4.0 最高推理档解题率 50.3%；三大个人智能体（OpenAI Dots、Meta Muse、Anthropic Claude Duet）集中落地，MCP 与 Agent Skills 已捐入 Linux 基金会 AAIF。制作人视角：头部模型价格再砍半 + 智能体产品化，意味着未来一年 AI 内容制作的单 token 成本与自动化程度都在加速改善。",
+          en: "Today's AI story runs on two tracks — the IPO window and the price war: Anthropic filed its S-1 with the SEC on Oct 26 (ticker ANT), reporting $16.29B H1 revenue with heavy non-cash losses, ~$131.65B in cash and short-term investments, 11,900+ customers paying ≥$100K a year, and unusually disclosing four agent escape-test environments; OpenAI is accelerating a ~$30B private round at a $1.25–1.4T valuation to lock in investors before Anthropic's November IPO, while also working toward a 2027 listing; GPT-6.1 Terra launched Oct 26 at $1/M input tokens and $5/M output tokens (half the previous price), scoring 50.3% on the top reasoning tier of Terminal-Bench 4.0. Three personal agents (OpenAI Dots, Meta Muse, Anthropic Claude Duet) are landing simultaneously, and MCP plus Agent Skills were donated to the AAIF under the Linux Foundation. Producer angle: frontier prices halving again plus productized agents mean the marginal cost of token and automation level for AI content work keeps improving into next year."
+        },
+        global: {
+          cn: "北美周末大盘 10/23–25 约 9,491 万美元（环比 -11.2%、同比 +21.8%），万圣节前类型片续领风骚：《Clayface》3,458 馆首周末 2,400 万登顶（全球 4,300 万）；纪录片《你看见一切》扩至 2,655 馆、次周末 1,950 万逆涨 25%，两周累计 4,510 万；莱卡停格动画《Wildwood》1,160 万开画。中国：10 月院线总票房已破 15 亿元，10/28 猫眼榜《神探之痕迹》累计 6.27 亿、昨日 385 万，领衔大盘；全国影片推介会（10/25–26 横店）中影推介《流浪地球3（上）》定档 2027 春节档等 23 部；《生化危机：爆发夜》借中国开画全球累计约 3.2–3.45 亿美元、登系列历史第一。",
+          en: "The Oct 23–25 North American weekend grossed ~$94.91M (down 11.2% WoW but up 21.8% YoY), with Halloween-genre titles leading: Clayface opened to $24M from 3,458 screens (global $43M); the documentary You Can See Everything expanded to 2,655 screens for a $19.5M sophomore frame (+25%), $45.1M in two weeks; Laika's stop-motion Wildwood opened to ~$11.6M. In China, October theatrical box office passed ¥1.5B, with The Trace of a Mastermind leading Maoyan's chart on Oct 28 at ¥627M cume (¥3.85M yesterday); at the National Film Pitch Fair (Oct 25–26, Hengdian) China Film pitched 23 titles including The Wandering Earth 3 (Part One), dated for the 2027 Spring Festival; Resident Evil: Outbreak Night pushed its global cume to ~$320–345M via its China opening, the franchise's all-time best."
+        },
+        aifilm: {
+          cn: "首部 AI 超写实院线长片迎来「口碑与票房背离」的检验：《三星堆：未来往事》10/23 全国公映、上映 5 天累计票房约 131 万元、场均人次低至 1 人，观众反馈画面「超预期」但大盘不买账，博纳影业 10/26 跌停收跌 10.06% 报 5.54 元——AI 长片在制作端已跑通（120 余万张底图、成本约为传统科幻片 1/10），发行端却仍需补课。中信建投研报（10/27）判断 AI 艺人、AI 综艺有望接棒 AI 短剧成为 AI+影视下一爆发点；证券日报（10/28）观察行业主流转向「真人实拍+AI 辅助」的渐进模式；芒果《后西游记·战天宫篇》10/4 黄金档双网第一、灵创剧场原生 AI 艺人出道。",
+          en: "China's first AI photoreal theatrical feature faces a reception-vs-box-office test: Sanxingdui: A Future Past bowed nationwide Oct 23 and grossed only ~¥1.31M in five days with per-screen attendance as low as one person; audiences called the visuals 'better than expected' while the market stayed cold, and Bona shares hit limit-down Oct 26 (-10.06% to ¥5.54). Production is proven (1.2M+ base images, cost estimated at a tenth of a traditional sci-fi feature) but distribution still needs to catch up. CITIC Securities (Oct 27) argues AI artists and AI variety shows may be the next eruption points after AI short dramas; Securities Daily (Oct 28) says studios are pivoting to a gradual 'live-action + AI assistance' model; Mango's AI drama Journey to the West: Battle Against Heaven took double #1 prime-time ratings on Oct 4 while its Lingchuang Theater debuted native AI artists."
+        },
+        music: {
+          cn: "AI 音乐进入「平台治理 + 版权追偿 + 榜单规则」三线收紧：Spotify 10/20 移除超 5,000 万首 AI slop/spam 曲目（退出推荐与编辑歌单）；YouTube Music 上线 AI 标签、Deezer 年底前推一键过滤开关、Tidal 对完全 AI 生成曲禁版税、Apple Music 强制 Made with AI 标注；UMG × TYGER 10/22 首次把录音与词曲目录授权给 AI 服务，Believe/TuneCore × Spotify 落地 AI 翻唱付费工具；索尼音乐申请下架约 26 万首 AI 仿冒曲，11 家唱片公司提出 AI 音乐进官方榜单的全球六原则；美国首例 AI 音乐流媒体欺诈案判 18 个月、责令退赔超 800 万美元；国内音著协提出 AI 训练用歌集体管理方案。制作人视角：做配乐先用「平台准入表 + 榜单六原则 + 版权授权链」三张清单自查。",
+          en: "AI music tightens across three fronts — platform governance, rights enforcement and chart rules: Spotify pulled 50M+ AI slop/spam tracks from recommendations and editorial on Oct 20; YouTube Music rolled out AI labels, Deezer's one-click filter goes live by year-end, Tidal is flagging fully-AI tracks and blocking royalties, Apple Music mandates 'Made with AI' tags; UMG×TYGER licensed recordings and publishing to an AI service for the first time (Oct 22) while Believe/TuneCore×Spotify shipped paid AI-cover tools; Sony moved to takedown ~260K AI soundalikes and 11 labels proposed six global principles for AI music in official charts; the first U.S. AI music-streaming fraud case ended in 18 months in prison and $8M+ in restitution. At home, MCSC proposed collective-management terms for AI-trained songs. Producer angle: run three checklists before scoring — platform access rules, the six chart principles, and a licensing ledger."
+        },
+        xiaohongshu: {
+          cn: "小红书正在变成「普通人的生意场」：0 粉可带货、搜索流量可长尾变现，种草直达已打通淘宝、京东、美团；内容端审美与情绪价值优先，本地生活、健康管理、AI 工具教程等赛道进入红利期；平台对刷量、站外导流与 AI 批量同质化零容忍——真实原创仍是底层通行证。",
+          en: "Xiaohongshu is becoming “everyday people's marketplace”: 0-follower commerce and long-tail search monetization, with seed-to-sale links into Taobao, JD and Meituan; on the creative side, aesthetics and emotion win, while local-life, wellness and AI-tool tutorial tracks are entering their window; fake engagement, off-platform funneling and AI batch content get zero tolerance — authenticity remains the bottom-line pass."
+        },
+        world: {
+          cn: "俄乌转向「边谈边停」：奥列什基局部停火自莫斯科时间 10/27 凌晨 4 时生效（比原计划提前两天），持续至 11/1 22:59，乌方已准备好参加 11 月上旬在阿布扎比举行的乌美俄三方会谈；普京 10/27 与挪威首相、芬兰总统通话 90 分钟；俄外交部将 7 名英国军工高管列入禁止入境名单。中东博弈继续：以色列大选出口民调显示两大阵营均未过半（利库德 25 席、正直党 23 席，反内塔尼亚胡阵营 53 席对右翼宗教阵营 50 席）；胡塞武装重新袭击沙特（利雅得国防部、两座机场及一处石油设施）；霍尔木兹海峡 10 月船只遇袭至少 30 起，创有记录以来最高月度总数，油价继续高位震荡。",
+          en: "Russia-Ukraine moves toward 'talk while fighting': the Oleshky local ceasefire took effect at 04:00 Moscow time Oct 27 (two days ahead of schedule), running until 22:59 Nov 1, and Ukraine is ready for trilateral US-Ukraine-Russia talks in Abu Dhabi in early November; Putin held a 90-minute call with Norway's PM and Finland's president on Oct 27; Russia's Foreign Ministry blacklisted seven UK defense-industry executives. The Middle East keeps boiling: Israel's exit polls show neither bloc clearing a majority (Likud 25, Degel HaTorah 23 — the anti-Netanyahu camp 53 vs the right-religious camp 50); Houthi forces again struck Saudi Arabia (Riyadh's Defense Ministry, two airports and an oil facility); and Hormuz saw at least 30 ship attacks in October, the highest monthly total on record, keeping oil prices elevated."
+        },
+        finance: {
+          cn: "10/28 行情：BTC 报 $80,633.48（CoinMarketCap，+0.62%），距历史高点 $126,080 低约 36%；ETH $2,341.97–2,354.46、XRP $1.32、SOL ~$101–102；全球加密总市值约 $2.80 万亿。美股 10/28 收盘：道指 52,377.57（+0.03%）、标普 7,722.60（+0.60%）、纳指 26,477.81（+1.18%），费城半导体 +3.6%，波音 -10.7%。10 年期美债收益率约 5.00%，CME FedWatch 预计本次维持利率不变概率 92.8%–94%，12 月加息概率约 69%–83%。原油：WTI 12 月合约 $99.90（-1.83%）、布伦特 12 月合约 $113.88（-1.67%），布伦特亚洲时段跌约 4% 交投于 110 美元下方；美元指数 102.32–102.38；COMEX 黄金 $4,073.10/盎司。制作人视角：利率 5% 附近即是全球风险资产的估值天花板压强点——内容公司的融资成本与观影消费弹性都在这个方程里。",
+  en: "Oct 28 markets: BTC ~$80,633 (+0.62% on CoinMarketCap, ~36% below the $126,086 ATH); ETH $2,341.97–2,354.46, XRP $1.32, SOL ~$101–102, total crypto cap ~$2.80T. US close Oct 28: Dow 52,377.57 (+0.03%), S&P 7,722.60 (+0.60%), Nasdaq 26,477.81 (+1.18%), with the PHLX Semi Index +3.6% and Boeing -10.7%. The 10Y Treasury yield sits near 5.00%; CME FedWatch implies 92.8–94% odds of no change this meeting and 69–83% odds of a December hike. Energy: WTI Dec $99.90 (-1.83%), Brent Dec $113.88 (-1.67%), with Brent down ~4% in Asia to trade below $110; DXY at 102.32–102.38; COMEX gold at $4,073.10/oz. Producer angle: a 5% handle on rates is the ceiling pressure point for every risk asset — content-company financing costs and consumer spending on movies both sit inside that equation.",
+          note_fix: "internal"
+        },
+        english: {
+          cn: "本期英语学习三档递进、与 10/28 行情新闻联动：入门学「现在进行时 + 涨跌动词」看懂 BTC 报价；进阶拆「edged higher / priced in / ahead of」三个高频短语，读透美股与美债联动；高级精读美联储决议前的市场长句，掌握条件句 + 情态动词的分析语气。难度循序渐进，目标是把读英文行情新闻变成习惯。",
+          en: "English Daily runs in three progressive levels tied to the Oct 28 market news: Beginner masters present-continuous + up/down verbs via the BTC quote; Intermediate breaks down edged higher, priced in and ahead of to read the US-equities/Treasury linkage; Advanced reads a long sentence ahead of the Fed decision, drilling conditionals and modals for an analytical tone. Ramping step by step, the goal is making English market reading a habit."
+        }
+      },
+      brief: [
+        {
+          title: "Anthropic 向 SEC 提交 S-1：2026H1 营收 162.86 亿美元，现金约 1,316.5 亿美元，客户超 11,900 家",
+          en: "Anthropic files its S-1 with the SEC: $16.286B H1 revenue, ~$131.65B in cash and investments, 11,900+ enterprise customers",
+          tag: "IPO",
+          date: "10-27",
+          source: "CGTN / 经济日报 / 证券时报网",
+          url: "https://news.cgtn.com/news/2026-10-27/Anthropic-files-for-IPO-reveals-soaring-revenue-massive-net-losses-1RzGVHGukKY/p.html",
+          why: "代码 ANT，净亏损含约 723.88 亿美元非现金公允价值变动、经营亏损仅约 6.93 亿美元——第一份把前沿模型公司的真实成本结构摆上台面的 S-1，是所有 AI 业务估值锚的基准文件。",
+          whyEn: "Ticker ANT; net losses include ~$72.4B in non-cash fair-value changes while operating loss is only ~$693M — the first document to put a frontier-lab cost structure on the table, and the anchor for every AI-business valuation."
+        },
+        {
+          title: "OpenAI 加速约 300 亿美元私募融资、估值 1.25–1.4 万亿美元：意在 Anthropic IPO 前锁定投资人",
+          en: "OpenAI accelerates a ~$30B private raise at a $1.25–1.4T valuation to lock in investors before Anthropic's IPO",
+          tag: "资本",
+          date: "10-27",
+          source: "澎湃新闻 / 凤凰网·路透",
+          url: "https://www.thepaper.cn/newsDetail_forward_34315469",
+          why: "两大前沿实验室用「同周资本对撞」争夺公开市场定价权：Anthropic 11 月 IPO 与 OpenAI 2027 年 IPO 的双轨竞速，将决定未来两年 AI 板块的估值水位。",
+          whyEn: "Two frontier labs are colliding on capital to own public-market pricing: the Anthropic November IPO vs. OpenAI's 2027 listing will set the AI valuation watermark for the next two years."
+        },
+        {
+          title: "奥列什基局部停火提前两天生效，乌美俄三方会谈计划 11 月上旬在阿布扎比举行",
+          en: "The Oleshky local ceasefire starts two days early; trilateral US-Ukraine-Russia talks planned in Abu Dhabi in early November",
+          tag: "地缘 · 俄乌",
+          date: "10-28",
+          source: "央视新闻 / 新华网 / 腾讯新闻",
+          url: "https://www.toutiao.com/article/7701417822878057023",
+          why: "停火自莫斯科时间 10/27 凌晨 4 时执行（原计划 10/29），持续至 11/1 22:59；乌方已同意参会、普京同步与北欧领导人通话 90 分钟——「边谈边打」进入实质阶段，供应链与外汇变量都要按此重估。",
+          whyEn: "The ceasefire ran from 04:00 Moscow time Oct 27 (vs. Oct 29 planned) to 22:59 Nov 1; Kyiv is onboard and Putin held a 90-minute call with Nordic leaders — fight-and-talk is now a durable regime, so re-rate supply-chain and FX variables."
+        },
+        {
+          title: "首部 AI 超写实院线片《三星堆：未来往事》5 天票房约 131 万元，博纳 10/26 跌停",
+          en: "First AI photoreal feature 'Sanxingdui: A Future Past' grosses just ~¥1.31M in five days; Bona hits limit-down Oct 26",
+          tag: "AI 院线",
+          date: "10-28",
+          source: "证券日报网 / 每日经济新闻",
+          url: "http://www.zqrb.cn/gscy/gongsi/2026-10-28/A1793091483066.html",
+          why: "成本端已证伪「AI 长片烧钱」（约为传统科幻片 1/10），但票房端证明「AI 标签」还不是观众进场的理由——内容、宣发、渠道三者缺一不可，制片人拿这个案例重新校准 AI 项目投入结构。",
+          whyEn: "Cost is now proven (about one-tenth of a traditional sci-fi feature), but the box office proves 'AI label' is not yet a reason to buy a ticket — content, marketing and distribution are jointly binding; recalibrate AI project spend with this case."
+        },
+        {
+          title: "美股 10/28 收涨：纳指 +1.18% 领衔，10 年期美债收益率约 5.00%",
+          en: "US stocks close higher Oct 28: Nasdaq +1.18% leads; 10Y Treasury near 5.00%",
+          tag: "美股 · 利率",
+          date: "10-28",
+          source: "CNBC TV18 / Schwab Network",
+          url: "https://www.cnbctv18.com/market/snp-500-nasdaq-dow-jones-tech-stocks-gain-wall-street-fed-decision-alphabet-microsoft-results-us-iran-war-oil-20020811.htm",
+          why: "道指 52,377.57（+0.03%）、标普 7,722.60（+0.60%）、纳指 26,477.81（+1.18%），科技股领涨但美债收益率高位横盘，FedWatch 预计本次按兵不动概率 92.8%–94%——利率与 AI 资本开支的双重定价仍是最核心变量。",
+          whyEn: "Dow 52,377.57 (+0.03%), S&P 7,722.60 (+0.60%), Nasdaq 26,477.81 (+1.18%); tech led while the 10Y hovered near 5% with FedWatch implying 92.8–94% odds of no change — rates plus AI capex remain the two rulers for all pricing."
+        }
+      ],
+      ai: [
+        {
+          title: "Anthropic 提交 S-1（代码 ANT）：2026H1 营收 162.86 亿美元、客户超 11,900 家，披露 4 个智能体逃逸测试环境",
+          en: "Anthropic's S-1 (ANT): $16.286B H1 revenue, 11,900+ enterprise clients, four disclosed agent escape-test environments",
+          tag: "IPO",
+          date: "10-27",
+          source: "CGTN / 经济日报 / 中国证券报",
+          url: "https://www.jingjiribao.cn/static/detail.jsp?id=693019",
+          why: "S-1 是理解前沿模型商业模型的公开底稿：营收规模、客户集中度、算力与安全开支结构全在其中——做影视 AI 工具选型与算力谈判前，先读这份文件。",
+          whyEn: "The S-1 is the public ledger of a frontier-lab business model — revenue scale, client concentration, and compute/safety spend. Read it before picking AI tools or negotiating compute for film work."
+        },
+        {
+          title: "OpenAI 推进约 300 亿美元私募：估值 1.25–1.4 万亿美元，同步瞄准 2027 年 IPO",
+          en: "OpenAI works a ~$30B private round at $1.25–1.4T valuation, targeting a 2027 IPO",
+          tag: "融资",
+          date: "10-27",
+          source: "澎湃新闻 / 凤凰网·路透",
+          url: "https://www.thepaper.cn/newsDetail_forward_34315469",
+          why: "一级市场用「临门一脚」式融资对抗 Anthropic 的公开上市窗口——两条资金路径的竞争会把前沿模型的估值锚钉得更实。",
+          whyEn: "Private-market funding races the public window — the tension between a last-minute round and an imminent IPO anchors frontier-model valuations harder."
+        },
+        {
+          title: "GPT-6.1 Terra 发布：API 价格腰斩（输入 $1 / 输出 $5 每百万 Token），Terminal-Bench 4.0 最高档 50.3%",
+          en: "OpenAI ships GPT-6.1 Terra: API pricing half of its predecessor ($1/$5 per M tokens), 50.3% on the hardest Terminal-Bench 4.0 tier",
+          tag: "模型",
+          date: "10-26",
+          source: "OpenAI Help Center / Silicon Report",
+          url: "https://help.openai.com/en/articles/9624314-model-release-notes",
+          why: "前沿模型持续降价 + 工具调用能力逼近 50% 通关率，意味着 AI 制作管线的「推理成本」和「自主完成度」同时在改善——预算表上的 AI 项会越来越少。",
+          whyEn: "Frontier intelligence keeps falling in price while tool-use hits ~50% on the hardest agent bench — both the inference line-item and the autonomy level of AI pipelines keep improving; the 'AI' row in your budget keeps shrinking."
+        },
+        {
+          title: "三大个人智能体集中落地：OpenAI Dots / Meta Muse（6 周美加破千万）/ Anthropic Claude Duet",
+          en: "Three personal agents land: OpenAI Dots, Meta Muse (10M+ US/CA users in six weeks), Anthropic Claude Duet",
+          tag: "智能体",
+          date: "10-26",
+          source: "AI Weekly / 腾讯新闻",
+          url: "https://news.qq.com/rain/a/20261021A0ABNB00",
+          why: "从「你问我答」到「主动代理」，智能体开始替你盯档期、比价、整理素材——个人制片的数字助理从玩具变成生产力工具。",
+          whyEn: "From Q&A to proactive agency, personal agents are moving from toys to productivity — a solo producer's digital assistant now actually monitors schedules, compares prices and organizes assets."
+        },
+        {
+          title: "MCP 与 Agent Skills 捐入 Linux 基金会 AAIF：智能体互操作标准再进一步",
+          en: "MCP and Agent Skills donated to the Linux Foundation's AAIF: agent-interop standards advance",
+          tag: "开源 · 标准",
+          date: "10-23",
+          source: "今日头条 / 腾讯新闻",
+          url: "https://new.qq.com/rain/a/20260721A02ZH600",
+          why: "两份关键标准进入中立基金会治理，智能体工具生态的跨平台复用将加速——选型时「生态兼容性」权重继续上升。",
+          whyEn: "Key standards now live under neutral governance; cross-platform reuse of agent tooling accelerates — weight 'ecosystem compatibility' higher when choosing tools."
+        }
+      ],
+      global: [
+        {
+          title: "《生化危机：爆发夜》登顶系列全球历史第一：中国开画贡献增量，累计约 3.2–3.45 亿美元",
+          en: "'Resident Evil: Outbreak Night' tops the franchise all-time global chart via China, at ~$320–345M",
+          tag: "电影 · 票房",
+          date: "10-28",
+          source: "Screen Daily / 猫眼专业版",
+          url: "https://www.screendaily.com/news/china-boosted-resident-evil-returns-to-global-box-office-top-spot-the-social-reckoning-disappoints/5221330.article",
+          why: "系列重启后靠中国增量重返全球周冠——「全球票房的分区结构」比总数字更能揭示续作立项逻辑，中国市场的类型偏好正在改写全球系列片路径。",
+          whyEn: "A reboot reclaiming the global top spot via China shows regional structure matters more than the headline number — Chinese genre preferences are rewriting global franchise strategy."
+        },
+        {
+          title: "10 月院线总票房破 15 亿元：《神探之痕迹》领跑猫眼榜，全国影片推介会定档《流浪地球3（上）》2027 春节",
+          en: "October China box office passes ¥1.5B: 'The Trace of a Mastermind' leads Maoyan; Wandering Earth 3 (Part 1) dated for 2027 Spring Festival",
+          tag: "电影 · 大盘",
+          date: "10-28",
+          source: "中国电影数据信息网 / 猫眼",
+          url: "https://maoyan.dianping.com/asgard/board/1",
+          why: "大盘热度仍在修复通道；头部片单提前一年多锁定档期，说明发行窗口的确定性成为行业新共识——立项与排片决策都要先看档期密度。",
+          whyEn: "The market is still recovering; top titles locking slots more than a year out signals certainty is the new consensus — read the release calendar before greenlighting or scheduling."
+        },
+        {
+          title: "北美 10/23–25 周末大盘约 9,491 万美元：Clayface 登顶、纪录片《你看见一切》逆涨 25%",
+          en: "North American weekend (Oct 23–25) ~$94.91M: Clayface #1; 'You Can See Everything' +25% in week two",
+          tag: "电影 · 票房",
+          date: "10-25",
+          source: "The Hollywood Reporter",
+          url: "https://www.hollywoodreporter.com/movies/movie-news/clayface-box-office-you-can-see-everything-wildwood-1236739530",
+          why: "类型片 + 纪录片的淡季组合拳双双成立：低成本恐怖片靠档期与品牌、纪录片靠奖季与争议人物——两种完全不同的「确定性」打法并行验证。",
+  whyEn: "A quiet-season combo proves both formulas: low-budget horror on brand-plus-calendar, and docs on awards-plus-controversy — two very different certainty plays validated side by side."
+        },
+        {
+          title: "《笑傲江湖2：东方不败》10/30 首登内地院线：经典 IP 重映再下一城",
+          en: "'Laughter of the Swordsman 2: Sword Stained with Royal Blood' hits mainland screens Oct 30: another legacy-IP re-release",
+          tag: "电影 · 发行",
+          date: "10-28",
+          source: "中国电影数据信息网",
+          url: "https://www.zgdypw.cn/",
+          why: "金庸 IP + 东方不败人设的长尾价值再被开发：经典重映成为片库资产变现的常规渠道——手握老 IP 的制片人应盘点自己的重映与重制清单。",
+  whyEn: "Jin Yong IP and the cult of Dongfang Bubai, the Invincible East, keep paying off: re-releases are now a routine library-monetization channel — legacy-IP holders should inventory their own re-release slate."
+        },
+        {
+          title: "中影全国影片推介会：推荐《流浪地球3（上）》等 23 部，横店影视节 10/23–28 举办",
+          en: "China Film Group's national pitch fair: 23 titles including 'The Wandering Earth 3 (Part One)'; Hengdian Film Festival runs Oct 23–28",
+          tag: "产业 · 推介",
+          date: "10-27",
+          source: "中国新闻网 / 新浪娱乐",
+          url: "https://www.toutiao.com/article/7692442984185119283",
+          why: "推介会清单 = 未来 18 个月的供给端地图：类型分布、卡司组合、档期规划都在这里提前露出，是立项对标的第一手资料。",
+          whyEn: "The pitch-fair roster is the supply map for the next 18 months — genre mix, casting combos and slot planning all surface here first; use it as the benchmark sheet for development."
+        }
+      ],
+      aifilm: [
+        {
+          title: "《三星堆：未来往事》上映 5 天票房约 131 万：成本跑通、市场待教，博纳仍推进两部 AI 项目",
+          en: "'Sanxingdui: A Future Past': production proven, market cold — Bona still advances two AI projects",
+          tag: "AI 院线",
+          date: "10-28",
+          source: "证券日报网 / 财联社",
+          url: "https://www.cls.cn/detail/2515994",
+          why: "全国首部拿公映许可证的 AI 超写实长片（100 分钟、120 余万张底图、约传统科幻片 1/10 成本）完成技术验证；博纳仍有《计划外：广寒行动》与《中华志怪之罗刹海市》推进，AI 电影矩阵不改——行业把这一仗当教科书。",
+          whyEn: "The first AI photoreal theatrical feature with a mainland release license (100 min, 1.2M+ base images, ~1/10 the traditional budget) validates the tech; Bona still advances Operation Moonfall and an animation — the AI feature matrix continues, and the industry treats this run as a textbook."
+        },
+        {
+          title: "中信建投：AI 艺人、AI 综艺有望接棒 AI 短剧，成为 AI+影视下一爆发点",
+          en: "CITIC: AI artists and AI variety shows may follow AI short dramas as the next AI+film eruption",
+          tag: "行业研报",
+          date: "10-27",
+          source: "中信建投研报（证券时报网转）",
+          url: "https://www.stcn.com/article/detail/4270599.html",
+          why: "一级信号转向「人设资产化」：AI 艺人与综艺是比短剧更轻、更可复制的 IP 形态——制片人评估 AI 内容项目时把这两种形态加入立项雷达。",
+          whyEn: "Sector signals turning to 'persona-as-asset': AI artists and variety are lighter and more replicable than short dramas — add both forms to your greenlight radar."
+        },
+        {
+          title: "证券日报：影视行业布局 AI 长片，主流转向「真人实拍 + AI 辅助」渐进模式",
+          en: "Securities Daily: studios add AI features, converging on a gradual 'live-action + AI assistance' model",
+          tag: "产业观察",
+          date: "10-28",
+          source: "证券日报",
+          url: "http://www.zqrb.cn/gscy/gongsi/2026-10-28/A1793091483066.html",
+          why: "头部公司用「实拍为底、AI 提效」降低风险，全 AI 化只在小体量试探——理解这条渐进路线，比赌「纯 AI 一夜爆发」更能指导当下预算分配。",
+          whyEn: "Leaders de-risk by keeping live-action at the core and using AI to raise efficiency, with full-AI explored only at small scale — understand this gradual curve before betting budgets either way."
+        },
+        {
+          title: "芒果 AI 军团再推进：10/4 黄金档双网第一，灵创剧场原生 AI 艺人日更上线",
+          en: "Mango's AI arm advances: #1 in both primetime charts Oct 4; native AI artists go daily on the Lingchuang Theater",
+          tag: "AI 剧集",
+          date: "10-26",
+          source: "腾讯新闻 / 湖南卫视",
+          url: "https://news.qq.com/rain/a/20261021A0ABNB00",
+          why: "《后西游记·战天宫篇》投资约 2,700 万、每分钟约 2 万元——芒果用上市公司口径验证 AI 长剧模型；灵创的 AI 艺人让「人设 IP」先于剧情成为商品。",
+          whyEn: "'Journey to the West: Battle of the Heavenly Palace' invested ~¥27M at ~¥20K/minute — Mango validates the AI long-form model with listed-company disclosure; native AI artists turn persona IP into product before the plot."
+        },
+        {
+          title: "华策《西游记之消失的五百年》戛纳首发预告，《资治通鉴》启动国内首部 AI 历史正剧微短剧",
+          en: "Huace's 'Journey to the West: The Lost 500 Years' premiered a trailer at Cannes; 'Zizhi Tongjian' becomes China's first AI historical-drama micro-series",
+          tag: "AI 项目",
+          date: "10-26",
+          source: "南方+ / 网易",
+          url: "https://www.nfnews.com/content/16VLZ9Zryr.html",
+          why: "头部公司把 AI 内容延伸到历史正剧与神话 IP：题材矩阵在铺宽，说明 AI 长内容的工业化已过了要不要的争论，进入怎么排产的阶段。",
+          whyEn: "Top studios extend AI into historical drama and mythology IP — the slate is broadening, meaning the 'should we' debate is over and we're now in scheduling."
+        }
+      ],
+      music: [
+        {
+          title: "Spotify 移除超 5,000 万首 AI slop/spam 曲目：退出推荐与编辑歌单，治理再升级",
+          en: "Spotify pulls 50M+ AI slop/spam tracks from recommendations and editorial — moderation escalates",
+          tag: "平台治理",
+          date: "10-20",
+          source: "RYM Magazine / Loudest",
+          url: "https://rymmagazine.com/spotify-has-pulled-more-than-50-million-ai-slop-and-spam-tracks-out-of-its-recommendations-this-year",
+          why: "平台用「规模级下架」回应 AI 垃圾内容洪水——配乐采购要提前对照平台准入规则，被移除的曲目不能进入商用素材库。",
+          whyEn: "Platforms answer the AI-flood with scale takedowns — check access rules before licensing; delisted tracks must not enter commercial libraries."
+        },
+        {
+          title: "索尼音乐申请下架约 26 万首 AI 仿冒曲，11 家唱片公司提出 AI 音乐进官方榜单的全球六原则",
+          en: "Sony moves to takedown ~260K AI soundalikes; 11 labels propose six global principles for AI music in official charts",
+          tag: "版权 · 榜单",
+          date: "10-22",
+          source: "腾讯新闻 / 凤凰网科技",
+          url: "https://tech.ifeng.com/c/8xOxzC9EtL4",
+          why: "从「维权个案」到「行业标准提案」：AI 音乐的可署名性与榜单准入正在被重新定义——做 AI 配乐必须把「六原则」翻译成自己的合规清单。",
+          whyEn: "From case-by-case takedowns to industry standards: AI music attribution and chart access are being redefined — translate the six principles into your own compliance checklist."
+        },
+        {
+          title: "UMG×TYGER 首次将录音与词曲目录授权给 AI 服务，主流厂牌商业化路径开闸",
+          en: "UMG×TYGER license recordings and publishing to an AI service for the first time — the majors' AI monetization door opens",
+          tag: "版权授权",
+          date: "10-22",
+          source: "Laurence Moroney",
+          url: "https://laurencemoroney.com/2026/10/22/ai-music-labels.html",
+          why: "此前「抵制 AI」的环球转向正规授权，AI 音乐从版权灰色地带走向可结算的授权市场——为配乐项目用主流曲库打开合规正门。",
+          whyEn: "UMG's pivot from ban to license signals AI music entering a payable, cleared market — the compliance front door for scoring with mainstream catalogs."
+        },
+        {
+          title: "美国首例 AI 音乐流媒体欺诈案宣判：一男子获刑 18 个月，责令退赔超 800 万美元",
+          en: "First U.S. AI music-streaming fraud sentence: 18 months imprisonment, $8M+ restitution ordered",
+          tag: "法律",
+          date: "10-08",
+          source: "腾讯新闻 / IT之家",
+          url: "https://m.toutiao.com/article/7698982699674993190",
+          why: "用 AI 批量生成 + 机器刷播的路径被司法定性：AI 音乐不是法外之地——做工具、做分发都要把「真实播放」写进风控红线。",
+          whyEn: "The mass-generate-plus-bot-stream path is now criminal — AI music is not a lawless zone; write 'genuine plays' into the risk red lines of any tool or distribution plan."
+        },
+        {
+          title: "ElevenLabs 视频配乐功能上线、周深《月之纪》单列「训练用途」授权边界、音著协提出集体管理方案",
+          en: "ElevenLabs ships video scoring; Zhou Shen's 'Yue Zhi Ji' fences training-only licensing; MCSC proposes collective management",
+          tag: "工具 · 版权",
+          date: "10-21",
+          source: "腾讯新闻 / 文趣文化",
+          url: "https://news.qq.com/rain/a/20261021A0ABNB00",
+          why: "工具端（一键配乐）与规则端（训练授权、集体管理）同日推进：配乐工种的工作流与版权台账都要随之更新。",
+          whyEn: "Tools (one-click scoring) and rules (training licenses, collective management) advance on the same day — scoring workflows and rights ledgers both need updating."
+        }
+      ],
+      xiaohongshu: [
+        {
+          title: "笔记带货分佣 2.0：0 粉实名即可挂商品链接，佣金 5%-50%；1000 粉进蒲公英可授权历史笔记，单次最高 5000 元；开店前 100 万交易额免平台佣金",
+          en: "Draft-commission 2.0: 0-follower accounts can link products after real-name verification, 5–50% commission; 1K+ followers can license history notes via dandelion (up to ¥5K per deal); stores get commission-free first ¥1M GMV.",
+          tag: "变现新规",
+          date: "08-31",
+          source: "运营动脉",
+          url: "https://www.yydm.cn/article/2398.html",
+          why: "变现工具全面下沉到素人：内容力即变现力，“先做内容再变大”成为可能——对准备起号的人，0 粉起步的门槛已被平台主动拆掉。",
+          whyEn: "Monetization tools reach every creator: content IS earning power, and growth-through-doing is now possible — the platform has removed the 0-follower barrier for newcomers."
+        },
+        {
+          title: "小红书「种草直达」闭环外延：红猫（淘宝天猫）、红京（京东）、红美（美团即时零售）三线打通，“种草→别处成交”可追踪，带动站内搜索量平均 +42%、订单成本降超 33%",
+          en: "'Seed & Convert' goes cross-platform: red-cat (Taobao/Tmall), red-JD and red-Meituan (instant retail) integrated; search lift averages +42%, cost-per-order down 33%+.",
+          tag: "平台机制",
+          date: "09-30",
+          source: "网易",
+          url: "https://www.163.com/dy/article/L83J40LH0556PQ94.html",
+          why: "平台不再执着站内闭环，转而把“种草外溢”做成可测量资产——自媒体内容第一次能被直接折算成品牌生意效果。",
+          whyEn: "The platform stops insisting on on-site checkout and turns 'seed-spillover' into measurable impact — creator content now maps directly onto brand business results."
+        },
+        {
+          title: "内容趋势「旷野 2.0」：末日生存/荒野求生笔记分享增长 195%，“探索”类 +124%；品牌用“秩序重构”叙事做情绪种草，万赞爆文频出",
+          en: "Trend 'Wilderness 2.0': apocalypse/survival notes +195% share, 'exploration' topics +124%; brands bank on order-restored narratives with constant 10K-like hits.",
+          tag: "内容趋势",
+          date: "03-04",
+          source: "千瓜数据",
+          url: "https://www.qian-gua.com/information/detail/3316",
+          why: "旷野文学揭示 2026 的选题红利：贩卖“安全中的惊险”与“重建秩序”的情绪代偿，种草逻辑从“我需要它”转向“我想成为那样的人”。",
+          whyEn: "'Wilderness 2.0' maps the 2026 topic dividend: selling 'safe danger' and rebuilt order as emotional compensation — the pitch shifts from “I need it” to “I want to be that person”."
+        },
+        {
+          title: "2026 五大涨粉赛道：本地生活实测（获客成本低 63%、变现率 2.3 倍）、职场技能垂直干货、健康管理（搜索量 +180%）、AI 工具教程、情感关系案例拆解",
+          en: "Five 2026 growth tracks: local life (63% lower CPF, 2.3x monetization), vertical workplace skills, wellness (search +180%), AI tool tutorials, and relationship case breakdowns.",
+          tag: "涨粉方法论",
+          date: "05-11",
+          source: "人人都是自媒体",
+          url: "http://www.woshizmt.cn/category/xiaohongshu/3161.html",
+          why: "红利在“超细分”：具体岗位+具体技能、有资质+实测数据的内容吃搜索流量红利，广告溢价高——选赛道比努力更决定起号速度。",
+          whyEn: "The edge is hyper-specificity: role-level skills and credentialed, data-backed content capture search-driven traffic at premium CPMs — track choice beats effort in account growth."
+        },
+        {
+          title: "素人冷启动方法论：20-30 篇后用「单变量测试法」找爆款公式；评论区运营+系列内容放大推荐流量；500-1000 粉在“信任峰值”接入变现",
+          en: "Cold-start playbook: after 20–30 posts, use one-variable tests to find your formula; amplify with comment ops and series content; onboard monetization at the 500–1K “trust peak”.",
+          tag: "涨粉方法论",
+          date: "08-10",
+          source: "人人都是自媒体",
+          url: "http://woshizmt.cn/category/xiaohongshu/3292.html",
+          why: "起号是工程不是玄学：单变量 A/B、评论互动与系列化的闭环可复刻；第一笔变现必须是粉丝主动想要的，才是健康起号。",
+          whyEn: "Launching an account is engineering, not luck: single-variable A/B tests, comment engagement and series weighting form a replicable loop; first revenue must be follower-requested to stay healthy."
+        },
+        {
+          title: "案例拆解：@敏感肌小王（皮肤科护士）0 粉开号，4 个月月入 3.2 万，搜索流量占比 65%；“有资质+硬核科普+长尾搜索”可复制",
+          en: "Case study: 'Sensitive-skin Xiao Wang' (a dermatology nurse) went 0→¥32K/mo in 4 months, 65% search traffic — “credentials + hard science + long-tail SEO” is replicable.",
+          tag: "案例拆解",
+          date: "08-10",
+          source: "人人都是自媒体",
+          url: "http://woshizmt.cn/category/xiaohongshu/3292.html",
+          why: "素人逆袭的共同公式：专业资质 + 搜索向内容 + 信任峰值变现；对想做垂类的自媒体人是低风险实证样本。",
+          whyEn: "The shared formula behind outsider wins: expertise + search-driven content + trust-peak monetization — a low-risk proof case for niche self-media entrants."
+        },
+        {
+          title: "买手电商进入深水区：董洁式个人 IP 直播升级为产品共创与长期分佣，本地生活试点 10 城（餐饮/美甲/健身/宠物），低竞争高转化蓝海窗口",
+          en: "Buyer e-commerce deepens: personal-IP livestreams move into product co-creation and long-term commissions; local-life seeds in 10 cities (food, beauty, fitness, pets) open a low-competition window.",
+          tag: "平台动向",
+          date: "07-15",
+          source: "人人都是自媒体",
+          url: "http://www.woshizmt.cn/m/view.php?aid=3186",
+          why: "创作走向“经营”：买手模式把个人信任变成分销渠道，本地生活则是线下店缺位时的全新起号窗口，适合内容与实体复合背景者切入。",
+          whyEn: "Creators become operators: buyer trust turns into a distribution channel, and local-life is a fresh launchpad for those who combine content and offline experience."
+        },
+        {
+          title: "AI 成为“电子经纪人”：商业创作者助手 Cura 上线；AI 种草助手灰度测试，“AI 生成初稿+达人改写”单人产能提升 3-5 倍；上半年获得收入买手同比增长 118%",
+          en: "AI as 'e-agent': creator assistant Cura launched; AI copywriter piloting — 'AI draft + creator rewrite' boosts solo output 3–5x; income-earning buyers grew +118% H1.",
+          tag: "创作工具",
+          date: "09-30",
+          source: "网易",
+          url: "https://www.163.com/dy/article/L83J40LH0556PQ94.html",
+          why: "AI 不替代表达，替代的是信息整理与初稿环节；产能翻倍意味着个人创作者第一次能跑出内容机构的产量，同时平台严打 AI 批量同质化——改写力就是价值。",
+          whyEn: "AI replaces grunt work, not voice: output doubles to agency scale for solo creators, while batch-AI spam gets penalized — the rewrite is where value lives."
+        },
+        {
+          title: "社区造星路径跑通：导演吴夏帆小红书粉丝超 129 万、作品入选 FIRST；传统影视人喆FILM《过来人》全平台播放超 1.2 亿——平台正成为内容人才被发现与验证的通道",
+          en: "A proven path: director Wu Xiafan topped 1.29M followers and reached FIRST; legacy-filmmaker AI short 'Guo Lai Ren' passed 120M plays across platforms — the platform is now a discovery and validation channel for talent.",
+          tag: "案例拆解",
+          date: "10-26",
+          source: "网易",
+          url: "https://www.163.com/dy/article/LA72JLS50552803A.html",
+          why: "从社区红人到银幕创作者的距离正在缩短：平台验证、影展背书、品牌直连的闭环，值得每个想做内容的制作人重新评估起点。",
+          whyEn: "The distance from community star to screen creator is shrinking; with validation, festival backing and direct brand deals, anyone eyeing content should rethink their starting point."
+        }
+      ],
+      world: [
+        {
+          title: "奥列什基局部停火 10/27 提前两天生效：乌美俄三方会谈拟 11 月上旬阿布扎比举行",
+          en: "Oleshky local ceasefire starts Oct 27, two days early; US-Ukraine-Russia talks planned in Abu Dhabi in early November",
+          tag: "地缘 · 俄乌",
+          date: "10-28",
+          source: "央视新闻 / 新华网 / 腾讯新闻",
+          url: "https://www.toutiao.com/article/7701417822878057023",
+          why: "停火持续至 11/1 22:59，乌方已准备好参会；普京与挪威、芬兰领导人通话 90 分钟——战场与谈判桌同步推进，地缘对能源与汇率的扰动进入常态窗口。",
+          whyEn: "The ceasefire runs through 22:59 Nov 1; Kyiv is ready to attend; Putin held a 90-minute call with Norway and Finland — war and talks run in parallel, keeping geopolitics a structural source of energy and FX volatility."
+        },
+        {
+          title: "以色列大选出口民调：利库德与正直党均未过半，反内塔尼亚胡阵营 57 席领先",
+          en: "Israel exit polls: no majority for either bloc — the anti-Netanyahu camp leads with 57 seats",
+          tag: "中东 · 政局",
+          date: "10-28",
+          source: "央视网 / 证券时报网",
+          url: "https://news.cctv.com/2026/10/28/ARTIKp8iuF4ty1JOUYrPD2OK261028.shtml",
+          why: "出口民调显示利库德约 25 席、正直党约 23 席、团结党约 14 席，投票率 77.7%——组阁前景不明将让以色列政策在中东棋局中更不确定。",
+          whyEn: "Exit polls put Likud ~25, Yamina ~14… — coalition uncertainty adds to an already volatile Middle-East chessboard. (Exit polls: Likud ~28, … final margins pending.)",
+          whyEn_fix: ""
+        },
+        {
+          title: "霍尔木兹海峡 10 月船只遇袭至少 30 起：创有记录以来最高月度总数，油价高位震荡",
+          en: "Hormuz shipping attacks hit at least 30 in October — highest monthly total on record",
+          tag: "地缘 · 能源",
+          date: "10-28",
+          source: "汇通网 / 新浪财经",
+          url: "https://news.fx678.com/202610280820169115.shtml",
+          why: "袭击数量与油价中枢同步抬升：WTI 12 月 $99.90（-1.83%）、布伦特 $113.88（-1.67%）——能源链每一环的保费与运费都在重定价，片场预算要留足对冲余量。",
+          whyEn: "Attack counts and the oil floor rise together — WTI Dec $99.90 (-1.83%), Brent Dec $113.88 (-1.67%): every link of the energy chain is re-rating; leave hedging headroom in production budgets."
+        },
+        {
+          title: "普京与挪威首相、芬兰总统电话会谈 90 分钟：北欧通道或成俄乌外交新变量",
+          en: "Putin holds a 90-minute call with the Norwegian PM and Finnish president: Nordic channels may become a new variable",
+          tag: "外交",
+          date: "10-28",
+          source: "央视新闻 / 腾讯新闻",
+          url: "https://www.163.com/dy/article/LAB1EVN705345ARG.html",
+          why: "与北欧领导人直接对话、俄外交部将 7 名英国军工高管列入禁止入境名单——外交接触面在扩大，但制裁与反制的清单也在加长。",
+          whyEn: "Direct outreach to Nordic leaders while blacklisting seven UK defense executives — diplomatic channels widen, yet sanctions and countersanctions lengthen in parallel."
+        }
+      ],
+      finance: [
+        {
+          title: "BTC 约 $80,633（+0.62%）：距历史高点约 -36%，全球加密总市值约 $2.80 万亿",
+          en: "BTC ~$80,633 (+0.62%), ~36% below the ATH; total crypto cap ~$2.80T",
+          tag: "加密 · BTC",
+          date: "10-28",
+          source: "CoinMarketCap / Kraken",
+          url: "https://coinmarketcap.com/currencies/bitcoin/",
+          why: "8 万关口上下反复、恐惧贪婪指数中性偏恐慌：ETH $2,341.97–2,354.46、XRP $1.32、SOL $101–102——主币企稳但山寨分化，杠杆仍未完全出清。",
+          whyEn: "Price churns around $80K with sentiment neutral-to-fearful; ETH $2,341.97–2,354.46, XRP $1.32, SOL $101–102 — majors stabilize while alts diverge; leverage not yet fully washed out."
+        },
+        {
+          title: "美股 10/28 收盘收涨：纳指 +1.18% 领跑，费城半导体 +3.6%，波音 -10.7%",
+          en: "US close Oct 28 higher: Nasdaq +1.18% leads; PHLX Semi +3.6%, Boeing -10.7%",
+          tag: "美股",
+          date: "10-28",
+          source: "CNBC TV18 / Schwab Network / 证券时报网",
+          url: "https://www.stcn.com/article/detail/4270599.html",
+          why: "道指 52,377.57（+0.03%）、标普 7,722.60（+0.60%）、纳指 26,477.81（+1.18%）——科技与新半导体领涨，但波音重挫拖累道指，结构分化说明大盘仍由 AI 资本开支叙事主导。",
+          whyEn: "Dow 52,377.57 (+0.03%), S&P 7,722.60 (+0.60%), Nasdaq 26,477.81 (+1.18%) — tech and semis lead while Boeing drags the Dow; the split shows the tape is still driven by the AI-capex narrative."
+        },
+        {
+          title: "10 年期美债收益率约 5.00%：FedWatch 预计本次按兵不动概率 92.8%–94%",
+          en: "10Y Treasury near 5.00%; FedWatch implies 92.8–94% odds of holding this meeting",
+          tag: "利率",
+          date: "10-28",
+          source: "汇通网 / 金融界 / 新浪财经",
+          url: "https://www.fx678.com/202610281038452061.shtml",
+          why: "5% 关口是近年的估值分水岭：收益率维持高位压制成长股估值，而 FedWatch 的 12 月加息概率升至 69%–83%——利率预期正在从「更久」走向「更高」。",
+          whyEn: "The 5% handle is a valuation watermark: elevated yields cap growth multiples, while December hike odds rose to 69–83% — the rate path is moving from 'higher for longer' toward 'yet higher.'"
+        },
+        {
+          title: "原油：WTI 12 月 $99.90（-1.83%）、布伦特 $113.88（-1.67%）；COMEX 黄金 $4,073.10",
+          en: "Energy: WTI Dec $99.90 (-1.83%), Brent Dec $113.88 (-1.67%); COMEX gold $4,073.10/oz",
+          tag: "商品",
+          date: "10-28",
+          source: "汇通网 / 中财网",
+          url: "https://www.cfi.net.cn/p20261028000299.html",
+          why: "布伦特亚洲时段一度跌约 4% 交投于 110 美元下方，但霍尔木兹袭击高发仍给油价地缘溢价托底——高油价传导到制作端的是片场能源与运费账单。",
+          whyEn: "Brent fell ~4% in Asia to trade below $110, yet Hormuz attack frequency keeps the geopolitical premium floored — high oil eventually shows up in location power and freight bills."
+        }
+      ],
+      english: [
+        {
+          title: "入门 · 一句话读懂 BTC 报价",
+          en: "Beginner · Read the BTC quote in one sentence",
+          tag: "入门 BEGINNER",
+          date: "10-28",
+          source: "原创学习卡 · 例句取自当日行情报道",
+          url: "https://coinmarketcap.com/currencies/bitcoin/",
+          why: "核心句式：主语 + is/are + 动词-ing（现在进行时表示当前状态）。词汇：bitcoin 比特币 / price 价格 / trade 交易 / rise 上涨 / fall 下跌。例句：Bitcoin is trading around $80,600.（比特币当前在 8 万美元附近交易。）练习：The stock market is rising today.（今天股市在上涨。）把 rising 换成 falling，句意就反过来了。",
+          whyEn: "Pattern: subject + 'is/are' + verb-ing (present continuous = current state). Vocabulary: bitcoin, price, trade, rise, fall. Example: 'Bitcoin is trading around $80,600.' Try: 'The stock market is rising today.' — swap 'rising' for 'falling' to flip the meaning."
+        },
+        {
+          title: "进阶 · 拆解一句美股收盘报道：Wall Street's key indexes notched gains",
+          en: "Intermediate · Break down a US close line: 'Wall Street's key indexes notched gains'",
+          tag: "进阶 INTERMEDIATE",
+          date: "10-28",
+          source: "原创学习卡 · 例句取自当日美股收盘报道",
+          url: "https://www.stcn.com/article/detail/4270599.html",
+          why: "原句：Wall Street's major indexes notched gains as tech stocks rallied ahead of the bond market's test of the 5% yield level. 拆解：notch gains 收涨（记作「记下涨幅」）；as 引导原因；rallied 大涨；ahead of 在…之前。译文：在债市考验 5% 收益率关口之前，科技股上涨带动华尔街主要指数收涨。记法：美股收盘报道三件套 = 指数动词 + as 原因 + ahead of 背景。",
+          whyEn: "Source line: 'Wall Street's major indexes notched gains as tech stocks rallied ahead of the bond market's test of the 5% yield level.' Key phrases: 'notched gains' (posted gains), 'rallied', 'ahead of' (before). Structure: index verb + 'as' cause + 'ahead of' background — the classic shape of US close headlines."
+        },
+        {
+          title: "高级 · 长难句精读：美债收益率 5% 关口前的市场语气",
+          en: "Advanced · Long-sentence reading: the market's tone ahead of the 5% yield test",
+          tag: "高级 ADVANCED",
+          date: "10-28",
+          source: "原创学习卡 · 例句取自当日利率报道",
+          url: "https://www.fx678.com/202610281038452061.shtml",
+          why: "原句：With the 10-year Treasury yield hovering near 5 percent, traders are pricing in a roughly 94 percent chance that the Fed will hold rates steady this meeting, while keeping open the possibility of a hike in December. 拆解：With…（独立主格，表背景）+ are priced in 计入（市场预期）+ that 同位语从句 + while keeping open（让步状语）。译文：在十年期美债收益率逼近 5% 的背景下，交易员计入约 94% 的概率认为美联储本次将按兵不动，同时保留 12 月加息的可能。技巧：行情评论先找 With + 数字，再看 priced in / odds / possibility 这类「预期词」——它们共同构成市场语气。",
+          whyEn: "Source: 'With the 10-year Treasury yield near 5%, traders are priced in a roughly 94 percent chance that the Fed will hold rates steady this meeting, while keeping open the possibility of a hike in December.' Structure: 'With…' absolute construction for background + 'priced in' (expected by the market) + 'that' appositive + 'while keeping open' concession. In market commentary, find the 'With' context first, then the expectation words — priced in / odds / chance — they form the tone."
+        }
+      ]
+    },
+    {
       date: "2026-10-26",
       batch: "每日更新",
       metrics: [
